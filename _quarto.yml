@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Mmesoma Ejiofor Website"
+  title: "Mmesoma Ejiofor"
   navbar:
     left:
       - href: index.qmd

@@ -3,7 +3,7 @@
     "path": "~/GitHub Documents/Mmesoma Ejiofor Website/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "2530622927",
     "contents": "",
     "dirty": false,
     "created": 1706015185189.0,
@@ -16,14 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2:0"
+        "rmdVisualModeLocation": "173:100",
+        "cursorPosition": "0,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1706015175,
+    "lastKnownWriteTime": 1706026119,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1706015175,
+    "last_content_update": 1706026119976,
     "read_only": false,
     "read_only_alternatives": []
 }
