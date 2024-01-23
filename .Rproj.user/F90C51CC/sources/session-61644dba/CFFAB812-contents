@@ -1,5 +1,14 @@
 ---
-title: "Mmesoma Ejiofor"
+title: " "
+output: html_document
+---
+
+<div style="float: left; margin-right: 20px; border-radius: 50%; overflow: hidden; width: 200px; height: 200px;">
+  <img src="IMG_5415.JPG" alt="My photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+</div>
+
+# Mmesoma Ejiofor
+
 ---
 
 Hello
