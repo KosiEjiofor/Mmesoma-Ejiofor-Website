@@ -7,15 +7,19 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Home
+        text: "{{< fa house >}} Home"
+        
       - href: cv.qmd
-        text: CV
-
+        text: "{{< fa user-tie >}} CV"
+        
+    right:
+      - href: Contact.qmd
+        text: "{{< fa envelope >}} Contact"
+     
 format:
   html:
-    theme: cosmo
+    theme: simplex
     css: styles.css
     toc: true
 
 editor: visual
-

@@ -4,7 +4,28 @@
     "href": "index.html",
     "title": "Mmesoma Ejiofor",
     "section": "",
-    "text": "Mmesoma Ejiofor\nGraduate Student\nDepartment of Economics\nMemorial University of Newfoundland\n\nHello\nMy name is Mmesoma Ejiofor. I am a graduate student of Economics at Memorial University of Newfoundland.\nWelcome to my website."
+    "text": "Mmesoma Ejiofor\nGraduate Student\nDepartment of Economics\nMemorial University of Newfoundland\n\n\n\n\nAbout\nMy name is Mmesoma Ejiofor. I am a graduate student of Economics at Memorial University of Newfoundland.\nWelcome to my website."
+  },
+  {
+    "objectID": "Contact.html",
+    "href": "Contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Contact.html#quarto",
+    "href": "Contact.html#quarto",
+    "title": "Contact",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Contact.html#running-code",
+    "href": "Contact.html#running-code",
+    "title": "Contact",
+    "section": "Running Code",
+    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
   },
   {
     "objectID": "about.html",
@@ -18,6 +39,6 @@
     "href": "cv.html",
     "title": "CV",
     "section": "",
-    "text": "Contact details\n\n\nEducation\n\nMA Economics\n\n\n\nResearch"
+    "text": "Contact details\n\n\nEducation\n\nMA Economics, Memorial University of Newfoundland\n\n\n\nResearch"
   }
 ]
