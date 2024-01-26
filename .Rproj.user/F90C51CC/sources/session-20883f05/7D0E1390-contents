@@ -68,9 +68,15 @@ Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is e
 >
 >     White Heteroskedasticity-Consistent Estimator is used in regression analysis to account for heteroskedasticity in the data by including information about the variability of the residuals in the standard error thus providing consistent standard errors for the estimated coefficients in the presence of heteroskedasticity.
 >
+>     denote the regression model as: $$Y=X\beta+u$$
+>
+>     The white heteroskedasticity-consistent estimator of the covariance matrix of the coefficient estimates is given by
+>
+>     $Var(\hat\beta) = (X'X)^{-1}X'$
+>
 > c)  Bias of an estimator
 >
->     The bias of an estimator is the difference between the expected value of an estimator and the true population parameter estimate. A biased estimator tends to overestimate or underestimate the true value of the parameter being estimated.
+>     The bias of an estimator is thess difference between the expected value of an estimator and the true population parameter estimate. A biased estimator tends to overestimate or underestimate the true value of the parameter being estimated.
 >
 >     \vspace{1in}
 
@@ -79,6 +85,78 @@ Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is e
     Assume that $X\sim N(\mu,\sigma^2)$. What is the (theoretical) finite-sample bias of $\hat\sigma^2$ and $\tilde\sigma^2$?
 
 ML estimator of the population variance
+
+$\tilde\sigma^2=n^{-1}\sum(X_i-\bar X)^2$
+
+Taking the expectation we have,
+
+$E(\tilde\sigma^2)=n^ {-1}E[\sum(X_i-\bar X)^2]$
+
+Solve for the numerator
+
+$E[\sum(X_i-\bar X)^2]$
+
+$=E[\sum(X_i^2-2X_i\bar X+\bar X^2]$
+
+$=E[\sum X_i^2-2\bar X\sum X_i+n\bar X^2]$
+
+$=E[\sum X_i^2-2\bar X\sum X_i+n\bar X^2]$
+
+$=E[\sum X_i^2-2\bar X.n\bar X+n\bar X^2]$
+
+$=E[\sum X_i^2-n\bar X^2]$
+
+$=\sum [E(X_i^2)- nE(\bar X^2)]$
+
+We know that ; $Var(X_i)=E(X_i^2)-E[( X_i)^2]$ where $Var(X_i)=\tilde\sigma^2$ and $E[(X_i)^2] = \mu^2$
+
+This implies that $\tilde\sigma^2=E(X_i^2)- \mu^2$ .
+
+Rearranging terms we have,
+
+$E(X_i^2)=\tilde\sigma^2+ \mu^2$ .
+
+Also, $Var(\bar X)=E(\bar X^2)-E[( \bar X)^2]$
+
+Thus, $E(\bar X^2)=\tilde\sigma^2/n+ \mu^2$
+
+substituting for $E(X_i^2)=\tilde\sigma^2+ \mu^2$ and $E(\bar X^2)=\tilde\sigma^2/n+ \mu^2$ into $\sum [E(X_i^2)- nE(\bar X^2)]$ we have;
+
+$\sum [E(X_i^2)- nE(\bar X^2)] = \sum (\tilde\sigma^2+ \mu^2) -n(\tilde\sigma^2/n+ \mu^2)$
+
+$=n\tilde\sigma^2 + n\mu^2 - \tilde\sigma^2-n\mu^2$
+
+$=n\tilde\sigma^2 -  \tilde\sigma^2$
+
+Hence, $E[\sum (X_i - \bar X)^2] =(n-1)\tilde\sigma^2$
+
+putting it back into the equation,
+
+$E(\tilde\sigma^2)=n^{-1}[E\sum(X_i-\bar X)^2]$
+
+$E(\tilde\sigma^2)=n^{-1}(n-1)\tilde\sigma^2$
+
+Therefore, the bias of the ML estimator is given as
+
+$Bias_ M (\tilde\sigma^2)=n^{-1}(n-1)\tilde\sigma^2 - \tilde\sigma^2$
+
+The OLS estimator of the population variance is given as:
+
+$\hat\sigma^2=(n-1)^{-1}\sum(X_i-\bar X)^2$
+
+Taking the expectation we have,
+
+$E[\hat\sigma^2]= E[(n-1)^{-1}\sum(X_i-\bar X)^2]$
+
+$= (n-1)^{-1}E[\sum(X_i-\bar X)^2]$
+
+Similarly, $E[\sum(X_i-\bar X)^2] = (n-1)\hat\sigma^2$
+
+$E[\hat\sigma^2]= [(n-1)^{-1}(n -1)\hat\sigma^2]$
+
+$E[\hat\sigma^2]= \hat\sigma^2$
+
+The bias of the OLS estimator is given as
 
 \vspace{1in}
 
@@ -145,15 +223,63 @@ cat("Standard Error of beta2 (White):", se_beta2_white, "\n")
 \vspace{1in}
 
 > b)  Using just the years 1990 and 1993, estimate the population equation from part i) by pooled OLS.
+>
+> ```{r, echo = TRUE}
+> library(plm)
+> load("murder.RData")
+>
+> #Subset the data 
+> subset_dt <- subset(data, year %in% c(90, 93))
+>
+> # Perform pooled OLS regression
+> model_1 <- lm(mrdrte ~ exec + unem, data = subset_dt)
+>
+> summary(model_1)
+>
+> ```
 
 \vspace{1in}
 
 > c)  Now, using 1990 and 1993, estimate the equation by fixed effects. You may use first differencing because yo are only using two years of data. Is there evidence of a deterrent effect? How strong?
+>
+>     ```{r}
+>
+>     #subset datasets.
+>
+>     Murder_90 <- subset(data, year == "90")
+>     Murder_93 <- subset(data, year == "93")
+>
+>
+>     #compute difference
+>     diff_mrdrte <- Murder_93$mrdrte - Murder_90$mrdrte
+>     diff_exec <- Murder_93$exec - Murder_90$exec
+>     diff_unem <- Murder_93$unem - Murder_90$unem
+>
+>     #estimate a regression using differencing
+>     mrdrte_model <- lm(diff_mrdrte ~ diff_exec + diff_unem)
+>
+>     summary(mrdrte_model)
+>     ```
 
 \vspace{1in}
 
 > d)  Compute the heteroskedasticity-robust standard error for the estimation in part b).
+>
+>     ```{r}
+>     library(sandwich)
+>     # Compute heteroskedasticity-robust standard errors
+>     robust_se <- sqrt(diag(vcovHC(mrdrte_model, type = "HC0")))
+>     cat("Robust Standard Errors:\n", robust_se, "\n")
+>
+>     ```
 
 \vspace{1in}
 
 > e)  Use all three years of data and estimate the model by fixed effects. Discuss the size and statistical significance of the deterrent effect compared with only using 1990 and 1993.
+>
+>     ```{r}
+>     library(plm)
+>     model_2 <- plm(mrdrte ~ exec + unem, data, index = c("state", "year"), model = "within", effect = "twoways")
+>
+>     summary(model_2)
+>     ```

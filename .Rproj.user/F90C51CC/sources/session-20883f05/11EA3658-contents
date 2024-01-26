@@ -1,0 +1,289 @@
+---
+title: |
+  | ECON 6051 
+  | Special Topics in Economics
+subtitle: |
+  | Advanced Microeconometrics
+  | Assignment 1
+author: Mmesoma Ejiofor (202382242)
+
+format: 
+  pdf:
+    include-in-header: 
+      text: |
+        \usepackage{fancyhdr}
+        \fancypagestyle{style1}{
+        \fancyhf{}
+        \fancyhead[L]{ECON 6051}
+        \fancyhead[R]{Assignment 1}
+        \fancyfoot[C]{\thepage}
+        \renewcommand{\headrulewidth}{0.4pt}
+        }
+        \pagestyle{style1}
+editor: visual
+---
+
+\thispagestyle{style1}
+
+\vspace{-1in}
+
+# Questions
+
+# Quarto
+
+Create a personal Quarto website hosted on GitHup pages. For this question, you only have to write the link to your page. Please see the video tutorial entitled "Create_Quarto_Website" posted on Nexus. For reference, you can check out my GitHub repository at https://github.com/clairl/clairl.github.io (be sure to check out the "\_quarto.yml" file for help with the navigation bar). Your website should include the following:
+
+An "Index" or "Home" page. This page should include the following:
+
+Your name
+
+Your photo
+
+Your credentials
+
+An "About Me" section that provides a brief (one paragraph) introduction to yourself.
+
+A Curriculum Vitae page
+
+You may choose to upload a file or write your info on the page.
+
+Contact Information
+
+Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is edited in the "\_quarto.yml" file.
+
+1.  The link to my website: <https://iabdullahi227.github.io/Ibrahim-Abdullahi/>
+
+## Theory
+
+2.  Define the following terms in a sentence (or short paragraph) and state the formula if appropriate.
+
+> a)  Heteroskedasticity :
+>
+>     Heteroskedasticity refers to a situation where the variability of the residuals in a regression model is not constant across observations.
+>
+> <!-- -->
+>
+> b)  White Heteroskedasticity-Consistent Estimator (Use matrix notation in your definition)
+>
+>     White Heteroskedasticity-Consistent Estimator is used in regression analysis to account for heteroskedasticity in the data by including information about the variability of the residuals in the standard error thus providing consistent standard errors for the estimated coefficients in the presence of heteroskedasticity.
+>
+>     denote the regression model as: $$Y=X\beta+u$$
+>
+>     The white heteroskedasticity-consistent estimator of the covariance matrix of the coefficient estimates is given by
+>
+>     $Var(\hat\beta) = (X'X)^{-1}X'$
+>
+> c)  Bias of an estimator
+>
+>     The bias of an estimator is the difference between the expected value of an estimator and the true population parameter estimate. A biased estimator tends to overestimate or underestimate the true value of the parameter being estimated.
+
+3.  Consider the ML and OLS estimators of the population variance, $\tilde\sigma^2=n^{-1}\sum(X_i-\bar X)^2$ and $\hat\sigma^2=(n-1)^{-1}\sum(X_i-\bar X)^2$, where the $X_i$ represent independent draws from a common distribution.\
+    \
+    Assume that $X\sim N(\mu,\sigma^2)$. What is the (theoretical) finite-sample bias of $\hat\sigma^2$ and $\tilde\sigma^2$?
+
+    ML estimator of the population variance is given as:
+
+    $\tilde\sigma^2=n^{-1}\sum(X_i-\bar X)^2$
+
+    Taking the expectation we have,
+
+    $E(\tilde\sigma^2)=n^ {-1}E[\sum(X_i-\bar X)^2]$
+
+    Solve for the numerator
+
+    $E[\sum(X_i-\bar X)^2]$
+
+    $=E[\sum(X_i^2-2X_i\bar X+\bar X^2]$
+
+    $=E[\sum X_i^2-2\bar X\sum X_i+n\bar X^2]$
+
+    $=E[\sum X_i^2-2\bar X\sum X_i+n\bar X^2]$
+
+    $=E[\sum X_i^2-2\bar X.n\bar X+n\bar X^2]$
+
+    $=E[\sum X_i^2-n\bar X^2]$
+
+    $=\sum [E(X_i^2)- nE(\bar X^2)]$
+
+    We know that ; $Var(X_i)=E(X_i^2)-E[( X_i)^2]$ where $Var(X_i)=\tilde\sigma^2$ and $E[(X_i)^2] = \mu^2$
+
+    This implies that $\tilde\sigma^2=E(X_i^2)- \mu^2$ .
+
+    Rearranging terms we have,
+
+    $E(X_i^2)=\tilde\sigma^2+ \mu^2$ .
+
+    Also, $Var(\bar X)=E(\bar X^2)-E[( \bar X)^2]$
+
+    Thus, $E(\bar X^2)=\tilde\sigma^2/n+ \mu^2$
+
+    substituting for $E(X_i^2)=\tilde\sigma^2+ \mu^2$ and $E(\bar X^2)=\tilde\sigma^2/n+ \mu^2$ into $\sum [E(X_i^2)- nE(\bar X^2)]$ we have;
+
+    $\sum [E(X_i^2)- nE(\bar X^2)] = \sum (\tilde\sigma^2+ \mu^2) -n(\tilde\sigma^2/n+ \mu^2)$
+
+    $=n\tilde\sigma^2 + n\mu^2 - \tilde\sigma^2-n\mu^2$
+
+    $=n\tilde\sigma^2 - \tilde\sigma^2$
+
+    Hence, $E[\sum (X_i - \bar X)^2] =(n-1)\tilde\sigma^2$
+
+    putting it back into the equation,
+
+    $E(\tilde\sigma^2)=n^{-1}[E\sum(X_i-\bar X)^2]$
+
+    $E(\tilde\sigma^2)=n^{-1}(n-1)\sigma^2$
+
+    Therefore, the bias of the ML estimator is given as
+
+    $Bias_ {ML} (\tilde\sigma^2)=\frac{n-1}{n} \sigma^2 - \sigma^2$
+
+    $Bias_ {ML} (\tilde\sigma^2)=\frac{-\sigma^2}{n}$
+
+    This implies that the variance of the ML estimator is biased by $\frac{-\sigma^2}{n}$
+
+    The OLS estimator of the population variance is given as:
+
+    $\hat\sigma^2=(n-1)^{-1}\sum(X_i-\bar X)^2$
+
+    Taking the expectation we have,
+
+    $E[\hat\sigma^2]= E[(n-1)^{-1}\sum(X_i-\bar X)^2]$
+
+    $= (n-1)^{-1}E[\sum(X_i-\bar X)^2]$
+
+    Similarly, $E[\sum(X_i-\bar X)^2] = (n-1)\sigma^2$
+
+    $E[\hat\sigma^2]= \frac{n-1}{n-1} \sigma^2$
+
+    $E[\hat\sigma^2]= \sigma^2$
+
+    The bias of the OLS estimator is given as
+
+    $E[\hat\sigma^2]= \sigma^2-\sigma^2$
+
+    $E[\hat\sigma^2]= 0$
+
+    This shows that the variance from the OLS estimator is unbiased.
+
+## Analysis
+
+4.  In this question we compare standard errors based on (incorrect) asymptotic assumptions with those based on alternate (appropriate) estimator (White). Consider one sample drawn from the following data generating process (DGP) which we will simulate in `R`:
+
+```{r, echo=TRUE}
+rm(list=ls())
+set.seed(123)
+n <- 25
+x <- rnorm(n,mean=0.0,sd=1.0)
+beta0 <- 1
+beta1 <- 0
+dgp <- beta0 + beta1*x
+e <- x^2*rnorm(n,mean=0.0,sd=1.0)
+y <- dgp + e
+
+```
+
+a)  Compute the OLS estimator of $\beta_2$ and its standard error using the `lm()` command in R or the `reg` command in Stata for the model $y_i=\beta_1+\beta_2 x_i+\epsilon_i$ based on the DGP given above. Next, compute the standard error of $\hat\beta_2$ by computing $\hat\sigma^2(X'X)^{-1}$ in using matrix commands in `R` or `Stata`, and verify that the two standard error estimates are identical
+
+```{r, echo = TRUE}
+# Fit the linear model
+
+model <- lm(y ~ x)
+
+# Extract the coefficient estimates and their standard errors
+beta2_hat <- coef(model)[2]
+se_beta2_lm <- summary(model)$coefficients[2, "Std. Error"]
+
+# Compute the standard error using matrix commands
+X <- cbind(1, x)
+y_hat <- predict(model)
+residuals <- y - y_hat
+sigma_hat_squared <- sum(residuals^2) / (length(y) - 2)  # (n - p), where p is the number of coefficients including intercept
+X_transpose_X_inv <- solve(t(X) %*% X)
+se_beta2_matrix <- sqrt(sigma_hat_squared * X_transpose_X_inv[2, 2])
+
+# Print the results
+cat("OLS Estimator of beta2:", beta2_hat, "\n")
+cat("Standard Error of beta2 (lm):", se_beta2_lm, "\n")
+cat("Standard Error of beta2 (matrix):", se_beta2_matrix, "\n")
+```
+
+b)  Compute White's heteroskedasticity consistent covariance matrix estimator (you may use the written functions, e.g., `hccm` function with the option `type="hc0"` from the `R` package `car`) and report the White estimator of the standard error of $\hat\beta_2$. Compare this with that from a) above.
+
+```{r, echo=TRUE}
+library(car)
+library(carData)
+# Obtain White's heteroskedasticity-consistent covariance matrix
+vcov_white <- hccm(model, type = "hc0")
+
+# Extract the standard error of beta2 from the White's covariance matrix
+se_beta2_white <- sqrt(vcov_white[2, 2])
+
+cat("Standard Error of beta2 (White):", se_beta2_white, "\n")
+```
+
+5.  Use the state-level data on murder rates and executions in MURDER for the following exercise. If you are using `R`, save the file "murder.RData" to your working directory and use the command `load(Murder.RData)`.
+
+> a)  Consider the unobserved effects model $$mrdrte_{it}=\eta_t+\beta_1exec_{it}+\beta_2unem{it}+a_i+u_i$$ where $\eta_t$ simply denotes different year intercepts and $a_i$ is the unobserved state effect. If past executions of convicted murderers have a deterrent effect, what should be the sign of $\beta_1$? What sign do you think $\beta_2$ should have? Explain?
+>
+>     If past executions of convicted murderers have a deterrent effect, then the sign of $\beta_1$ should be negative. This is because, a deterrent effect from past convicted muderes will cause individuals from not committing murder so they won't get convicted and thus expected to have a negative effect on the murder rate. $\beta_2$ is expected to have a positive sign. That is, an increase in unemployment rate increases murder rate. This is because, unemployment may cause economic hardships and this could encourage social vices among individuals which might result to increasing crime rates including murder.
+
+> b)  Using just the years 1990 and 1993, estimate the population equation from part i) by pooled OLS.
+>
+> ```{r, echo = TRUE}
+> library(plm)
+> load("murder.RData")
+>
+> #Subset the data 
+> subset_dt <- subset(data, year %in% c(90, 93))
+>
+> # Perform pooled OLS regression
+> model_1 <- lm(mrdrte ~ exec + unem, data = subset_dt)
+>
+> summary(model_1)
+> ```
+
+> c)  Now, using 1990 and 1993, estimate the equation by fixed effects. You may use first differencing because you are only using two years of data. Is there evidence of a deterrent effect? How strong?
+>
+>     ```{r}
+>
+>     #subset datasets.
+>
+>     Murder_90 <- subset(data, year == "90")
+>     Murder_93 <- subset(data, year == "93")
+>
+>
+>     #compute difference
+>     diff_mrdrte <- Murder_93$mrdrte - Murder_90$mrdrte
+>     diff_exec <- Murder_93$exec - Murder_90$exec
+>     diff_unem <- Murder_93$unem - Murder_90$unem
+>
+>     #estimate a regression using differencing
+>     mrdrte_model <- lm(diff_mrdrte ~ diff_exec + diff_unem)
+>
+>     summary(mrdrte_model)
+>     ```
+>
+> The results suggests that there is a strong evidence of deterrent effect. From the result, on average, an additional execution leads to a decrease in the murder rate by approximately -0.10384. Since murder rates are measured per 100,000 people, a decline of 0.10384 would be considered significant.
+
+> d)  Compute the heteroskedasticity-robust standard error for the estimation in part b).
+>
+>     ```{r}
+>     library(sandwich)
+>     # Compute heteroskedasticity-robust standard errors
+>     robust_se <- sqrt(diag(vcovHC(mrdrte_model, type = "HC0")))
+>     cat("Robust Standard Errors:\n", robust_se, "\n")
+>
+>     ```
+>
+> The heteroscedasticity-robust standard error for past executions is 0.016 and 0.143 for annual unemployment rate.
+
+> e)  Use all three years of data and estimate the model by fixed effects. Discuss the size and statistical significance of the deterrent effect compared with only using 1990 and 1993.
+>
+>     ```{r}
+>     library(plm)
+>     model_2 <- plm(mrdrte ~ exec + unem, data, index = c("state", "year"), model = "within", effect = "twoways")
+>
+>     summary(model_2)
+>     ```
+>
+> The results suggest that a unit increase in past executions reduces murder rates by 0.138382. However, this is not statistically significant. Compared to the model where only two years of data (for 1990 and 1993) are used, the deterrent effect is larger but not statistically significant.

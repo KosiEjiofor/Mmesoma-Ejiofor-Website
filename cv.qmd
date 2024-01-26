@@ -6,7 +6,7 @@ editor: visual
 ## Contact details
 {{< fa envelope >}} [mkejiofor@mun.ca](mailto:mkejiofor@mun.ca)
 
-{{< fa phone >}} (709) 853-5600
+{{< fa phone >}} +1 (709) 853-5600
 
 {{< fa paper-plane >}} Department of Economics   
 &nbsp;&nbsp;&nbsp;&nbsp; Memorial University of Newfoundland   
@@ -47,18 +47,22 @@ Bachelor's thesis 'Financial sector development, public and private consumtion e
 - Social welfare community development service, 2022.
 
 ## Skills
-- Microsoft
+- Microsoft suite
 - Stata
 - E-views
 - Latex
 - Quarto
 - R
+- Financial modelling
+- Business and strategic plan``   `       ``        
 
-## Leadership
+## Leadership Experience
 - President, Capital market club, 2015-2016
-- 
+- President, Road safety club, FGGC Onitsha, 2014-2016.
 
 ## Awards and scholarship
+- Memorial University of Newfoundland SGS funding, 2023
+- Best student in Economics, 2015.
 
 ## Languages
 - English

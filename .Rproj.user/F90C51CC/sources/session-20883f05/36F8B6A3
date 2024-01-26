@@ -1,14 +1,14 @@
 {
-    "id": "7D0E1390",
-    "path": "C:/Users/HP EliteBook Revolve/Downloads/Econ_6051 Assignment 1(202382928).qmd",
+    "id": "36F8B6A3",
+    "path": "~/Assignment 1/Econ_6051 Assignment 1(202382928) (1).qmd",
     "project_path": null,
     "type": "quarto_markdown",
-    "hash": "1036944298",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1706218980673.0,
+    "created": 1706284395442.0,
     "source_on_save": false,
-    "relative_order": 6,
+    "relative_order": 7,
     "properties": {
         "rmdVisualMode": "true",
         "rmdVisualWrapConfigured": "true",
@@ -16,16 +16,15 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "2899:1791",
-        "cursorPosition": "56,0",
-        "scrollLine": "0"
+        "rmdVisualModeLocation": "8537:4684",
+        "docOutlineSize": "110"
     },
     "folds": "",
-    "lastKnownWriteTime": 1706268310,
+    "lastKnownWriteTime": 1706282775,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1706268310291,
+    "last_content_update": 1706284412900,
     "read_only": false,
     "read_only_alternatives": []
 }
