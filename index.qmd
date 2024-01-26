@@ -8,7 +8,8 @@ format: html
 
 ::: columns
 ::: {.column width="40%"}
- ![](IMG_5415.jpg)
+![](C:\Users\HP EliteBook Revolve\Documents\GitHub Documents\Mmesoma Ejiofor Website\IMG_5415.JPG)
+ 
 :::
 
 ::: {.column width="60%"}
@@ -16,7 +17,7 @@ format: html
 
 ### Mmesoma Ejiofor
 
-Graduate Student\
+**Graduate Student**\
 Department of Economics\
 Memorial University of Newfoundland
 

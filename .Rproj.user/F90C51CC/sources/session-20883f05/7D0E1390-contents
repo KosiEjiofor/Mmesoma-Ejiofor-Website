@@ -78,6 +78,8 @@ Navigation bar with "Home", "CV", and "Contact" Buttons. The navigation bar is e
     \
     Assume that $X\sim N(\mu,\sigma^2)$. What is the (theoretical) finite-sample bias of $\hat\sigma^2$ and $\tilde\sigma^2$?
 
+ML estimator of the population variance
+
 \vspace{1in}
 
 ## Analysis
