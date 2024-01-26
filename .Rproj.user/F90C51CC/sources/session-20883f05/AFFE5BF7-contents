@@ -1,26 +1,20 @@
 ---
-title: "Contact"
-format: html
+title: "Contact Infotmation"
 editor: visual
 ---
 
-## Quarto
+## 
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+{{< fa envelope >}} \[mkejiofor\@mun.ca\]
 
-## Running Code
+{{< fa phone >}} (709) 853-5600
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+{{< fa paper-plane >}} Department of Economics
 
-```{r}
-1 + 1
-```
+&nbsp;&nbsp;&nbsp;&nbsp; Memorial University of Newfoundaland
 
-You can add options to executable code like this
+&nbsp;&nbsp;&nbsp;&nbsp; 100 Elizabeth Avenue
 
-```{r}
-#| echo: false
-2 * 2
-```
+&nbsp;&nbsp;&nbsp;&nbsp; St. John's, NL, Canada
 
-The `echo: false` option disables the printing of code (only output is displayed).
+&nbsp;&nbsp;&nbsp;&nbsp; AIC 5S7

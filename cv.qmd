@@ -1,11 +1,64 @@
 ---
-title: "CV"
+title: "Curriculum Vitae"
+editor: visual
 ---
 
-# Contact details
+## Contact details
+{{< fa envelope >}} [mkejiofor@mun.ca](mailto:mkejiofor@mun.ca)
 
-# Education
+{{< fa phone >}} (709) 853-5600
 
-- MA Economics, Memorial University of Newfoundland
+{{< fa paper-plane >}} Department of Economics   
+&nbsp;&nbsp;&nbsp;&nbsp; Memorial University of Newfoundland   
+&nbsp;&nbsp;&nbsp;&nbsp; 100 Elizabeth Avenue   
+&nbsp;&nbsp;&nbsp;&nbsp; St. John's, NL, Canada   
+&nbsp;&nbsp;&nbsp;&nbsp; AIC 5S7
 
-# Research
+## Education
+
+- MA Economics, Memorial University of Newfoundland, current
+- B.Sc Economics (First class honors), University of Nigeria, 2021
+Bachelor's thesis 'Financial sector development, public and private consumtion expenditure nexus in Nigeria.
+
+## Current Positions
+
+- Graduate assistant, Department of Economics, Memorial University of Newfoundland.
+- Research assistant, Dr. Nikita Lyssenko, Memorial University of Newfoundland
+
+## Professional experience
+
+- Executive trainee (Enterprise risk management), (2023) Guaranty trust bank, Nigeria.
+- Client serving contractor (Strategy and transactions), (2022-2023), Ernst and Young, Nigeria.
+
+## Certification
+- Financial modelling and valuation analyst (2022), Corporate finance institute
+
+## Areas of interest
+- Development economics
+- Monetary economics
+- Econometrics
+- Finance
+- Data analysis
+
+## Volunteers
+- ENACTUS (2019-2021), promoted environmental sanitation and maximization of waste material using the 3Rs; Reduce, Reuse & Recycle.
+- carried out sensitization in high waste generating groups in food markets and processing centers.
+- Member, Press club, Federal Government Girls' College Onitsha, 2014-2016
+
+## Computing Skills
+- Microsoft
+- Stata
+- E-views
+- Latex
+- Quarto
+- R
+
+## Leadership
+- President, Capital market club, 2015-2016
+- 
+
+## Awards and scholarship
+
+## Languages
+- English
+- Igbo

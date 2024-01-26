@@ -9,23 +9,16 @@
   {
     "objectID": "Contact.html",
     "href": "Contact.html",
-    "title": "Contact",
+    "title": "Contact Infotmation",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+    "text": "[mkejiofor@mun.ca]\n (709) 853-5600\n Department of Economics\n     Memorial University of Newfoundaland\n     100 Elizabeth Avenue\n     St. John’s, NL, Canada\n     AIC 5S7"
   },
   {
-    "objectID": "Contact.html#quarto",
-    "href": "Contact.html#quarto",
-    "title": "Contact",
+    "objectID": "Contact.html#section",
+    "href": "Contact.html#section",
+    "title": "Contact Infotmation",
     "section": "",
-    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
-  },
-  {
-    "objectID": "Contact.html#running-code",
-    "href": "Contact.html#running-code",
-    "title": "Contact",
-    "section": "Running Code",
-    "text": "Running Code\nWhen you click the Render button a document will be generated that includes both content and the output of embedded code. You can embed code like this:\n\n1 + 1\n\n[1] 2\n\n\nYou can add options to executable code like this\n\n\n[1] 4\n\n\nThe echo: false option disables the printing of code (only output is displayed)."
+    "text": "[mkejiofor@mun.ca]\n (709) 853-5600\n Department of Economics\n     Memorial University of Newfoundaland\n     100 Elizabeth Avenue\n     St. John’s, NL, Canada\n     AIC 5S7"
   },
   {
     "objectID": "about.html",
@@ -37,8 +30,85 @@
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "CV",
+    "title": "Curriculum Vitae",
     "section": "",
-    "text": "Contact details\n\n\nEducation\n\nMA Economics, Memorial University of Newfoundland\n\n\n\nResearch"
+    "text": "mkejiofor@mun.ca\n (709) 853-5600\n Department of Economics\n     Memorial University of Newfoundland\n     100 Elizabeth Avenue\n     St. John’s, NL, Canada\n     AIC 5S7"
+  },
+  {
+    "objectID": "cv.html#contact-details",
+    "href": "cv.html#contact-details",
+    "title": "Curriculum Vitae",
+    "section": "",
+    "text": "mkejiofor@mun.ca\n (709) 853-5600\n Department of Economics\n     Memorial University of Newfoundland\n     100 Elizabeth Avenue\n     St. John’s, NL, Canada\n     AIC 5S7"
+  },
+  {
+    "objectID": "cv.html#education",
+    "href": "cv.html#education",
+    "title": "Curriculum Vitae",
+    "section": "Education",
+    "text": "Education\n\nMA Economics, Memorial University of Newfoundland, current\nB.Sc Economics (First class honors), University of Nigeria, 2021 Bachelor’s thesis ’Financial sector development, public and private consumtion expenditure nexus in Nigeria."
+  },
+  {
+    "objectID": "cv.html#current-positions",
+    "href": "cv.html#current-positions",
+    "title": "Curriculum Vitae",
+    "section": "Current Positions",
+    "text": "Current Positions\n\nGraduate assistant, Department of Economics, Memorial University of Newfoundland.\nResearch assistant, Dr. Nikita Lyssenko, Memorial University of Newfoundland"
+  },
+  {
+    "objectID": "cv.html#professional-experience",
+    "href": "cv.html#professional-experience",
+    "title": "Curriculum Vitae",
+    "section": "Professional experience",
+    "text": "Professional experience\n\nExecutive trainee (Enterprise risk management), (2023) Guaranty trust bank, Nigeria.\nClient serving contractor (Strategy and transactions), (2022-2023), Ernst and Young, Nigeria."
+  },
+  {
+    "objectID": "cv.html#certification",
+    "href": "cv.html#certification",
+    "title": "Curriculum Vitae",
+    "section": "Certification",
+    "text": "Certification\n\nFinancial modelling and valuation analyst (2022), Corporate finance institute"
+  },
+  {
+    "objectID": "cv.html#areas-of-interest",
+    "href": "cv.html#areas-of-interest",
+    "title": "Curriculum Vitae",
+    "section": "Areas of interest",
+    "text": "Areas of interest\n\nDevelopment economics\nMonetary economics\nEconometrics\nFinance\nData analysis"
+  },
+  {
+    "objectID": "cv.html#volunteers",
+    "href": "cv.html#volunteers",
+    "title": "Curriculum Vitae",
+    "section": "Volunteers",
+    "text": "Volunteers\n\nENACTUS (2019-2021), promoted environmental sanitation and maximization of waste material using the 3Rs; Reduce, Reuse & Recycle.\ncarried out sensitization in high waste generating groups in food markets and processing centers.\nMember, Press club, Federal Government Girls’ College Onitsha, 2014-2016"
+  },
+  {
+    "objectID": "cv.html#computing-skills",
+    "href": "cv.html#computing-skills",
+    "title": "Curriculum Vitae",
+    "section": "Computing Skills",
+    "text": "Computing Skills\n\nMicrosoft\nStata\nE-views\nLatex\nQuarto\nR"
+  },
+  {
+    "objectID": "cv.html#leadership",
+    "href": "cv.html#leadership",
+    "title": "Curriculum Vitae",
+    "section": "Leadership",
+    "text": "Leadership\n\nPresident, Capital market club, 2015-2016"
+  },
+  {
+    "objectID": "cv.html#awards-and-scholarship",
+    "href": "cv.html#awards-and-scholarship",
+    "title": "Curriculum Vitae",
+    "section": "Awards and scholarship",
+    "text": "Awards and scholarship"
+  },
+  {
+    "objectID": "cv.html#languages",
+    "href": "cv.html#languages",
+    "title": "Curriculum Vitae",
+    "section": "Languages",
+    "text": "Languages\n\nEnglish\nIgbo"
   }
 ]
