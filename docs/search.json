@@ -4,7 +4,14 @@
     "href": "index.html",
     "title": "Mmesoma Ejiofor",
     "section": "",
-    "text": "Mmesoma Ejiofor\nGraduate Student\nDepartment of Economics\nMemorial University of Newfoundland\n\n\n\n\nAbout\nMy name is Mmesoma Ejiofor. I am a graduate student of Economics at Memorial University of Newfoundland.\nWelcome to my website."
+    "text": "Graduate Student\nDepartment of Economics\nMemorial University of Newfoundland"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Mmesoma Ejiofor",
+    "section": "About",
+    "text": "About\nI am a graduate student of Economics at Memorial University of Newfoundland. I currently work as a graduate assistant at the department of Economics, Memorial University of Newfoundland and a research assistant to Dr. Nikita Lyssenko. I am passionate about exploring economic relationships and financial analysis. Prior to pursuing to Master’s studies in Economics, I have stints of experience in banking and consulting. My research interest lies generally in the the field of development and financial economics."
   },
   {
     "objectID": "Contact.html",
@@ -81,14 +88,14 @@
     "href": "cv.html#volunteers",
     "title": "Curriculum Vitae",
     "section": "Volunteers",
-    "text": "Volunteers\n\nENACTUS (2019-2021), promoted environmental sanitation and maximization of waste material using the 3Rs; Reduce, Reuse & Recycle.\ncarried out sensitization in high waste generating groups in food markets and processing centers.\nMember, Press club, Federal Government Girls’ College Onitsha, 2014-2016"
+    "text": "Volunteers\n\nENACTUS (2019-2021), promoted environmental sanitation and maximization of waste material using the 3Rs; Reduce, Reuse & Recycle.\ncarried out sensitization in high waste generating groups in food markets and processing centers.\nMember, Press club, Federal Government Girls’ College Onitsha, 2014-2016\nSocial welfare community development service, 2022."
   },
   {
-    "objectID": "cv.html#computing-skills",
-    "href": "cv.html#computing-skills",
+    "objectID": "cv.html#skills",
+    "href": "cv.html#skills",
     "title": "Curriculum Vitae",
-    "section": "Computing Skills",
-    "text": "Computing Skills\n\nMicrosoft\nStata\nE-views\nLatex\nQuarto\nR"
+    "section": "Skills",
+    "text": "Skills\n\nMicrosoft\nStata\nE-views\nLatex\nQuarto\nR"
   },
   {
     "objectID": "cv.html#leadership",

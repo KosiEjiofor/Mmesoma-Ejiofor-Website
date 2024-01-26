@@ -83,17 +83,17 @@ ul.task-list li input[type="checkbox"] {
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
- <span class="menu-text">Home</span></a>
+ <span class="menu-text"> Home</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./cv.html" rel="" target="">
- <span class="menu-text">CV</span></a>
+ <span class="menu-text"> CV</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./Contact Information.qmd" rel="" target="">
- <span class="menu-text">Contact Information</span></a>
+    <a class="nav-link" href="./Contact.html" rel="" target="">
+ <span class="menu-text"> Contact</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools">
@@ -124,18 +124,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="column" style="width:40%;">
 <p><img src="IMG_5415.jpg" class="img-fluid"></p>
 </div><div class="column" style="width:60%;">
-<section id="mmesoma-ejiofor" class="level1">
-<h1>Mmesoma Ejiofor</h1>
+<section id="mmesoma-ejiofor" class="level3">
+<h3 class="anchored" data-anchor-id="mmesoma-ejiofor">Mmesoma Ejiofor</h3>
 <p>Graduate Student<br>
 Department of Economics<br>
 Memorial University of Newfoundland</p>
 </section>
 </div>
 </div>
-<section id="about" class="level1">
-<h1>About</h1>
-<p>My name is Mmesoma Ejiofor. I am a graduate student of Economics at Memorial University of Newfoundland.</p>
-<p>Welcome to my website.</p>
+<section id="about" class="level2">
+<h2 class="anchored" data-anchor-id="about">About</h2>
+<p>I am a graduate student of Economics at Memorial University of Newfoundland. I currently work as a graduate assistant at the department of Economics, Memorial University of Newfoundland and a research assistant to Dr.&nbsp;Nikita Lyssenko. I am passionate about exploring economic relationships and financial analysis. Prior to pursuing to Master’s studies in Economics, I have stints of experience in banking and consulting. My research interest lies generally in the the field of development and financial economics.</p>
 
 
 </section>
